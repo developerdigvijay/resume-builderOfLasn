@@ -15,25 +15,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function setupButtonListeners() {
-    const saveBtn = document.querySelector('.navbtn:nth-child(2)');
+    const saveBtn = document.getElementById('saveBtn') || document.querySelector('.navbtn[data-action="save"]') || document.querySelector('.navbtn:nth-child(2)');
     if (saveBtn) {
         saveBtn.addEventListener('click', saveResume);
     } else {
         console.error('Save button not found');
     }
 
-    const homeBtn = document.querySelector('.navbtn:nth-child(3)');
+    const homeBtn = document.querySelector('a.navbtn') || document.querySelector('.navbtn[data-action="home"]') || document.querySelector('.navbtn:nth-child(3)');
     if (homeBtn) {
         homeBtn.addEventListener('click', goHome);
     } else {
         console.error('Home button not found');
     }
 
-    const downloadBtn = document.getElementById('downloadBtn');
+    const downloadBtn = document.getElementById('downloadBtn') || document.getElementById('cmd') || document.querySelector('.navbtn[data-action="download"]');
     if (downloadBtn) {
         downloadBtn.addEventListener('click', printpdf);
     } else {
-        console.error('Download button not found');
+        console.warn('Download button not found — printpdf may still be called manually');
     }
 }
 
@@ -119,3 +119,6 @@ function goHome() {
     // Replace with the actual home page URL
     window.location.href = 'index.html';
 }
+
+// expose for inline onclick handlers and other modules
+window.printpdf = printpdf;

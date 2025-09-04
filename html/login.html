@@ -4,60 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="../css/login.css" />
   </head>
   <body>
     <div class="main">
       <div class="left">
-        
-    <div class="slider-container">
-      <div class="slider">
-          <div class="slide" style="background-image: url('https://plus.unsplash.com/premium_photo-1683531060766-c460adea7010?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJlc3VtZXxlbnwwfHwwfHx8MA%3D%3D');">
+        <div class="slider-container">
+          <div class="slider">
+            <div
+              class="slide"
+              data-bg="https://plus.unsplash.com/premium_photo-1683531060766-c460adea7010?w=1200&auto=format&fit=crop&q=60"
+            >
               <div class="header">
-                  <div class="logo">AMU</div>
-                  <button class="back-button">Back to website →</button>
+                <div class="logo">AMU</div>
+                <button class="back-button">Back to website →</button>
               </div>
               <div class="content">
-                  <h2>Capturing Moments,<br>Creating Memories</h2>
+                <h2>Capturing Moments,<br />Creating Memories</h2>
               </div>
               <div class="indicators">
-                  <div class="indicator"></div>
-                  <div class="indicator"></div>
-                  <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator active"></div>
               </div>
-          </div>
-          <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJlc3VtZXxlbnwwfHwwfHx8MA%3D%3D');">
+            </div>
+            <div
+              class="slide"
+              data-bg="https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?w=1200&auto=format&fit=crop&q=60"
+            >
               <div class="header">
-                  <div class="logo">AMU</div>s
-                  <button class="back-button">Back to website →</button>
+                <div class="logo">AMU</div>
+                s
+                <button class="back-button">Back to website →</button>
               </div>
               <div class="content">
-                  <h2>Explore the World<br>Through Our Lens</h2>
+                <h2>Explore the World<br />Through Our Lens</h2>
               </div>
               <div class="indicators">
-                  <div class="indicator"></div>
-                  <div class="indicator active"></div>
-                  <div class="indicator"></div>
+                <div class="indicator"></div>
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
               </div>
-          </div>
-          <div class="slide" style="background-image: url('https://media.istockphoto.com/id/1359108560/photo/resumes-on-laptop-with-glasses-resume-review-job-interview.webp?a=1&b=1&s=612x612&w=0&k=20&c=kmXx8hMjcs31dHSFJ2LFobGbBA5Ru_5Ws4oSC_T2DHs=');">
+            </div>
+            <div
+              class="slide"
+              data-bg="https://media.istockphoto.com/id/1359108560/photo/resumes-on-laptop-with-glasses-resume-review-job-interview.webp"
+            >
               <div class="header">
-                  <div class="logo">AMU</div>
-                  <button class="back-button">Back to website →</button>
+                <div class="logo">AMU</div>
+                <button class="back-button">Back to website →</button>
               </div>
               <div class="content">
-                  <h2>Unforgettable Adventures<br>Await You</h2>
+                <h2>Unforgettable Adventures<br />Await You</h2>
               </div>
               <div class="indicators">
-                  <div class="indicator active"></div>
-                  <div class="indicator"></div>
-                  <div class="indicator"></div>
+                <div class="indicator active"></div>
+                <div class="indicator"></div>
+                <div class="indicator"></div>
               </div>
+            </div>
           </div>
-      </div>
-  </div>
-
-
+        </div>
       </div>
       <div class="right">
         <div class="form-container">
@@ -93,17 +100,30 @@
             </div>
             <div class="GA">
               <button type="button">
-                <img src="/assets/resume-template/google.svg" alt="" /> Google
+                <img
+                  data-src="../assets/resume-template/google.svg"
+                  alt="Google"
+                  width="20"
+                  height="20"
+                />
+                Google
               </button>
               <button type="button">
-                <img src="/assets/resume-template/apple.svg" alt="" /> Apple
+                <img
+                  data-src="../assets/resume-template/apple.svg"
+                  alt="Apple"
+                  width="20"
+                  height="20"
+                />
+                Apple
               </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <script src="/js/login.js"></script>
+
+    <script src="../js/lazy-bg.js" defer></script>
+    <script src="../js/login.js" defer></script>
   </body>
 </html>
