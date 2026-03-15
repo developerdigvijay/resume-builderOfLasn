@@ -132,6 +132,14 @@ nav ul li a {
     margin: 10px;
 }
 
+
+.box-shadow{
+    /* box-shadow: 10px 5px 5px red; */
+    filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.2));
+
+    
+}
+
 .how-it-works {
     text-align: center;
     padding: 50px 20px;
