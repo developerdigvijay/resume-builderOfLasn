@@ -69,10 +69,6 @@ nav ul li a {
     align-items: center;
     padding: 50px;
     background-color: #eef3fc;
-    background-image: url(images/bg_2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
 
@@ -87,6 +83,8 @@ nav ul li a {
     font-size: 60px;
     margin-bottom: 15px;
 }
+
+
 
 .faang {
     color: #0066ff;
@@ -106,10 +104,22 @@ nav ul li a {
     text-decoration: none;
     margin-top: 15px;
 }
-
-.hero-image img {
-    max-width: 100%;
+.hero-image{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
 }
+.hero-image img{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 
 .trusted-companies {
     text-align: center;

@@ -1,129 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/login.css" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="left">
-        <div class="slider-container">
-          <div class="slider">
-            <div
-              class="slide"
-              data-bg="https://plus.unsplash.com/premium_photo-1683531060766-c460adea7010?w=1200&auto=format&fit=crop&q=60"
-            >
-              <div class="header">
-                <div class="logo">AMU</div>
-                <button class="back-button">Back to website →</button>
-              </div>
-              <div class="content">
-                <h2>Capturing Moments,<br />Creating Memories</h2>
-              </div>
-              <div class="indicators">
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator active"></div>
-              </div>
-            </div>
-            <div
-              class="slide"
-              data-bg="https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?w=1200&auto=format&fit=crop&q=60"
-            >
-              <div class="header">
-                <div class="logo">AMU</div>
-                s
-                <button class="back-button">Back to website →</button>
-              </div>
-              <div class="content">
-                <h2>Explore the World<br />Through Our Lens</h2>
-              </div>
-              <div class="indicators">
-                <div class="indicator"></div>
-                <div class="indicator active"></div>
-                <div class="indicator"></div>
-              </div>
-            </div>
-            <div
-              class="slide"
-              data-bg="https://media.istockphoto.com/id/1359108560/photo/resumes-on-laptop-with-glasses-resume-review-job-interview.webp"
-            >
-              <div class="header">
-                <div class="logo">AMU</div>
-                <button class="back-button">Back to website →</button>
-              </div>
-              <div class="content">
-                <h2>Unforgettable Adventures<br />Await You</h2>
-              </div>
-              <div class="indicators">
-                <div class="indicator active"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="right">
-        <div class="form-container">
-          <h1>Create an account</h1>
-          <p>
-            Already have an account?&nbsp;
-            <span><a href="#">Log in</a></span>
-          </p>
-          <!-- inputs -->
-          <div class="input-f-l">
-            <input type="text" name="" id="" placeholder="First name" />
-            <input type="text" name="" id="" placeholder="Last name" />
-          </div>
-          <div class="input-e-p">
-            <input type="email" name="" id="" placeholder="Email" />
-            <input
-              type="password"
-              name=""
-              id=""
-              placeholder="Enter your password"
-            />
-            <div class="terms-condition">
-              <input type="checkbox" name="" id="checkbox" />
-              <p>I agree to the <a href="#">Terms & Conditions</a></p>
-            </div>
-            <div class="create-ac">
-              <button value="Create account">Create account</button>
-            </div>
-            <div class="or-reg-with">
-              <hr />
-              <span>Or register with</span>
-              <hr />
-            </div>
-            <div class="GA">
-              <button type="button">
-                <img
-                  data-src="../assets/resume-template/google.svg"
-                  alt="Google"
-                  width="20"
-                  height="20"
-                />
-                Google
-              </button>
-              <button type="button">
-                <img
-                  data-src="../assets/resume-template/apple.svg"
-                  alt="Apple"
-                  width="20"
-                  height="20"
-                />
-                Apple
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AMU Resume Builder</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="left">
+            <div class="slider-container" role="region" aria-label="Image slider">
+                <div class="slider">
+                    <article class="slide"
+                        data-bg="https://plus.unsplash.com/premium_photo-1683531060766-c460adea7010?w=1200&auto=format&fit=crop&q=60">
+                        <header class="header">
+                            <div class="logo" aria-label="AMU logo">AMU</div>
+                            <button class="back-button" type="button" aria-label="Back to website">Back to website
+                                →</button>
+                        </header>
+                        <div class="content">
+                            <h2>Capturing Moments,<br>Creating Memories</h2>
+                        </div>
+                        <div class="indicators" role="tablist">
+                            <button class="indicator" role="tab" aria-selected="false" tabindex="0"
+                                aria-label="Slide 1"></button>
+                            <button class="indicator" role="tab" aria-selected="false" tabindex="-1"
+                                aria-label="Slide 2"></button>
+                            <button class="indicator active" role="tab" aria-selected="true" tabindex="0"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </article>
+                    <article class="slide"
+                        data-bg="https://images.unsplash.com/photo-1602407294553-6ac9170b3ed0?w=1200&auto=format&fit=crop&q=60">
+                        <header class="header">
+                            <div class="logo" aria-label="AMU logo">AMU</div>
+                            <button class="back-button" type="button" aria-label="Back to website">Back to website
+                                →</button>
+                        </header>
+                        <div class="content">
+                            <h2>Explore the World<br>Through Our Lens</h2>
+                        </div>
+                        <div class="indicators" role="tablist">
+                            <button class="indicator" role="tab" aria-selected="false" tabindex="-1"
+                                aria-label="Slide 1"></button>
+                            <button class="indicator active" role="tab" aria-selected="true" tabindex="0"
+                                aria-label="Slide 2"></button>
+                            <button class="indicator" role="tab" aria-selected="false" tabindex="-1"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </article>
+                    <article class="slide"
+                        data-bg="https://media.istockphoto.com/id/1359108560/photo/resumes-on-laptop-with-glasses-resume-review-job-interview.webp">
+                        <header class="header">
+                            <div class="logo" aria-label="AMU logo">AMU</div>
+                            <button class="back-button" type="button" aria-label="Back to website">Back to website
+                                →</button>
+                        </header>
+                        <div class="content">
+                            <h2>Unforgettable Adventures<br>Await You</h2>
+                        </div>
+                        <div class="indicators" role="tablist">
+                            <button class="indicator active" role="tab" aria-selected="true" tabindex="0"
+                                aria-label="Slide 1"></button>
+                            <button class="indicator" role="tab" aria-selected="false" tabindex="-1"
+                                aria-label="Slide 2"></button>
+                            <button class="indicator" role="tab" aria-selected="false" tabindex="-1"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="right">
+            <div class="form-container">
+                <h1>Create an account</h1>
+                <p>
+                    Already have an account? <a href="login.html">Log in</a>
+                </p>
+                <form class="signup-form" method="post" action="/api/signup" novalidate>
+                    <fieldset class="input-f-l">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="firstName" placeholder="First name" required
+                            aria-describedby="first-name-help">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="lastName" placeholder="Last name" required>
+                    </fieldset>
+                    <fieldset class="input-e-p">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required
+                            minlength="8">
+                        <div class="terms-condition">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="/terms" target="_blank" rel="noopener">Terms &
+                                    Conditions</a></label>
+                        </div>
+                        <div class="create-ac">
+                            <button type="submit">Create account</button>
+                        </div>
+                    </fieldset>
+                    <div class="or-reg-with">
+                        <hr />
+                        <span>Or register with</span>
+                        <hr />
+                    </div>
+                    <div class="GA">
+                        <button type="button" class="social-btn google">
+                            <img data-src="../assets/resume-template/google.svg" alt="Sign up with Google" width="20"
+                                height="20" loading="lazy">
+                            Google
+                        </button>
+                        <button type="button" class="social-btn apple">
+                            <img data-src="../assets/resume-template/apple.svg" alt="Sign up with Apple" width="20"
+                                height="20" loading="lazy">
+                            Apple
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <script src="../js/lazy-bg.js" defer></script>
     <script src="../js/login.js" defer></script>
-  </body>
+</body>
+
 </html>

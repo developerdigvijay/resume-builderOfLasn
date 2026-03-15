@@ -8,7 +8,7 @@ function printpdf() {
     allButtons.forEach(button => {
         button.classList.add("none");
     });
-    
+
     allInputCheckboxes.forEach(input => {
         input.classList.add("none");
     });
