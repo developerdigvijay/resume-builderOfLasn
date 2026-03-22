@@ -38,6 +38,13 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0066ff;
+    transform: translateY(-2px);
+    text-decoration: underline;
 }
 
 .nav-buttons a {
@@ -52,6 +59,16 @@ nav ul li a {
     color: #333;
     border: 1px solid #333;
     border-radius: 4px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0066ff;
+    color: #fff;
+    border-color: #0066ff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
 }
 
 .get-started-btn {
@@ -59,10 +76,22 @@ nav ul li a {
     color: #fff;
     border: none;
     border-radius: 4px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #0052cc;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.4);
 }
 
 
 .hero {
+    background-image: url(/images/bg_2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -103,6 +132,14 @@ nav ul li a {
     border-radius: 0px;
     text-decoration: none;
     margin-top: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0052cc;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 102, 255, 0.4);
 }
 .hero-image{
 width: 50%;
@@ -129,7 +166,7 @@ overflow: hidden;
 .trusted-companies h3 {
     font-size: 24px;
     margin-bottom: 20px;
-}
+}   
 
 .company-logos {
     display: flex;
@@ -140,6 +177,15 @@ overflow: hidden;
 .company-logos img {
     max-width: 150px;
     margin: 10px;
+    transition: all 0.3s ease;
+    filter: grayscale(30%);
+    cursor: pointer;
+}
+
+.company-logos img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    /* box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3); */
 }
 
 
@@ -166,6 +212,10 @@ footer {
     text-align: center;
 }
 
+.temp  h2{
+    margin: 100px;
+
+}
 /* Slider CSS */
 .slider_c .slider_li {
     display: grid;
@@ -185,6 +235,14 @@ footer {
     height: 400px;
     object-fit: cover;
     padding: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.slider_c .slider_li .li_image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 .container {
@@ -215,8 +273,10 @@ footer {
 }
 
 .slider_c .fa:hover {
-
     background: #77cfd5;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(23, 191, 233, 0.4);
+    transition: all 0.3s ease;
 }
 
 .slider_c .fa#prev_slide {
@@ -247,11 +307,17 @@ footer {
     height: 4px;
 }
 
-.slider_scrollbar .scrollbar_thumb {
+.scrollbar_thumb {
     position: absolute;
     height: 100%;
     width: 50%;
     background: #17bfe9;
     border-radius: inherit;
     cursor: grab;
+    transition: all 0.3s ease;
+}
+
+.scrollbar_thumb:hover {
+    width: 60%;
+    box-shadow: 0 0 8px rgba(23, 191, 233, 0.5);
 }
